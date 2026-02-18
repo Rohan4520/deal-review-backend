@@ -43,12 +43,11 @@
 //   }
 // }
 
-
 {
   "compilerOptions": {
     "target": "ES2020",
-  "module": "CommonJS",
-"moduleResolution": "Node",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "rootDir": "./server/src",
     "outDir": "./dist",
     "strict": true,

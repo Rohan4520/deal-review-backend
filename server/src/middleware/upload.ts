@@ -24,9 +24,11 @@ import cloudinary from "../config/cloudinary.js";
 
 const storage = new CloudinaryStorage({
   cloudinary,
-  params: {
-    folder: "zento-products",
-    allowed_formats: ["jpg", "png", "jpeg", "webp"],
+  params: async (req, file) => {
+    return {
+      folder: "zento-products",
+      allowed_formats: ["jpg", "png", "jpeg", "webp"],
+    };
   },
 });
 
